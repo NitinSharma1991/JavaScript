@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        var day = 5;
+
+        switch (day) {
+            case 1:
+                document.write("Sunday");
+                break;
+            case 2:
+                document.write("Monday");
+                break;
+            case 3:
+                document.write("Teusday");
+                break;
+            case 4:
+                document.write("Wednesday");
+                break;
+            case 5:
+                document.write("Thursday");
+        }
+
+        function buttonClick() {
+            let str = document.getElementById("text").value;
+            // alert("Value inside the text box is" + str);
+
+            let password = document.getElementById("password").value;
+
+            if (password != "") {
+                alert(password);
+            }
+        }
+    </script>
+</head>
+<body>
+<br>
+
+
+<h2 id="heading 2"> Some Random click</h2>
+<input id="text" placeholder="Enter Anything">
+<input type="password" id="password">
+<br>
+<button onclick="buttonClick()">Click ME</button>
+<br>
+<input type="radio" value="simple snippets"> simple snippets</input>
+</body>
+</html>

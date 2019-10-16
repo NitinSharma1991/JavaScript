@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function validate() {
+
+            const username = document.getElementById("text1").value;
+            let password = document.getElementById("text2").value;
+
+            if (username.trim() == "" || password.trim() == "") {
+                // alert("Blank Values");
+                // username.style.border = "solid 3px red";
+             // username.focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return validate()" action="message.html">
+
+    Name: <input id="text1"> <br>
+    Password: <input id="text2" required>
+    <br><br>
+    <button type="submit"> submit</button>
+</form>
+</body>
+</html>
